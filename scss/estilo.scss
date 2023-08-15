@@ -7,6 +7,17 @@ $color-cajas:#0000005b;
     margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+    .carouselExampleAutoplaying {
+      width: 100%;
+      max-width: 300px;
+    }
+    .carousel-item img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+
 .icono{
     margin-left: 10px;
 }
@@ -141,3 +152,18 @@ h1{
     background-size:cover;
     background-repeat: no-repeat;
 }
+
+.registros{
+    background-image: url(../IMG/re.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+    color: black;
+    text-align: center;
+    
+}
+
+
+
+
+
