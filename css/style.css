@@ -114,6 +114,9 @@ h1 {
     transform: translatey(0px); } }
 
 .primero {
+  width: 100%; }
+
+.primero {
   transform: translatey(0px);
   -webkit-animation: float 6s ease-in-out infinite;
   animation: float 6s ease-in-out infinite; }
@@ -128,8 +131,13 @@ h1 {
   background-repeat: no-repeat; }
 
 .registros {
+  color: black;
+  text-align: center;
+  height: 800px;
+  width: 100%; }
+
+.contactanos {
   background-image: url(../IMG/re.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: black;
   text-align: center; }

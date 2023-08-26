@@ -136,6 +136,10 @@ h1{
     }
 }
 
+.primero{
+    width: 100%;
+}
+
 .primero {
     transform: translatey(0px);
     -webkit-animation: float 6s ease-in-out infinite;
@@ -154,13 +158,20 @@ h1{
 }
 
 .registros{
-    background-image: url(../IMG/re.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
     
     color: black;
     text-align: center;
+    height: 800px;
+    width: 100%;
     
+}
+
+.contactanos{
+    background-image: url(../IMG/re.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
 }
 
 
