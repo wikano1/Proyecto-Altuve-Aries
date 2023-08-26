@@ -98,7 +98,8 @@ h1 {
   background-image: url(../IMG/composicion-abstracta-luz-ultravioleta-uv.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: antiquewhite; }
+  color: antiquewhite;
+  overflow-x: hidden; }
 
 .oferta {
   margin-top: 10%; }
