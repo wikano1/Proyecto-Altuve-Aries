@@ -1,4 +1,11 @@
 @charset "UTF-8";
+body {
+  background-image: url(../IMG/pexels-edward-jenner-4252526.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center; }
+
 .cards {
   margin-top: 5%; }
 
@@ -91,6 +98,9 @@ h1 {
   background-repeat: no-repeat;
   color: antiquewhite; }
 
+.oferta {
+  margin-top: 10%; }
+
 .m1 {
   border-radius: 6px; }
 
@@ -114,12 +124,12 @@ h1 {
     transform: translatey(0px); } }
 
 .primero {
-  width: 100%; }
-
-.primero {
   transform: translatey(0px);
   -webkit-animation: float 6s ease-in-out infinite;
   animation: float 6s ease-in-out infinite; }
+
+.iconos {
+  margin-left: 10%; }
 
 .centro {
   align-items: center; }
@@ -128,12 +138,14 @@ h1 {
   margin-bottom: 10px;
   background-image: url(../IMG/pexels-jéshoots-238118.jpg);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%; }
 
 .registros {
   color: black;
   text-align: center;
-  height: 800px;
+  height: 400px;
   width: 100%; }
 
 .contactanos {
@@ -141,3 +153,38 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center; }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-250px * 7)); } }
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2; }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg); }
+  .slider::before {
+    left: 0;
+    top: 0; }
+  .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14); }
+  .slider .slide {
+    height: 100px;
+    width: 250px; }

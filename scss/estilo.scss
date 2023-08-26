@@ -1,5 +1,15 @@
 $color-cajas:#0000005b;
 
+body{
+    background-image:url(../IMG/pexels-edward-jenner-4252526.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    
+    justify-content: center;
+    
+}
+
 .cards{
     margin-top: 5%;
 }
@@ -104,6 +114,11 @@ h1{
     background-repeat: no-repeat;
     color: antiquewhite;
     
+    
+}
+
+.oferta{
+    margin-top: 10%;
 }
 
 .m1{
@@ -136,9 +151,6 @@ h1{
     }
 }
 
-.primero{
-    width: 100%;
-}
 
 .primero {
     transform: translatey(0px);
@@ -146,6 +158,9 @@ h1{
             animation: float 6s ease-in-out infinite;
 }
 
+.iconos{
+    margin-left: 10%;
+}
 .centro{
     align-items: center;
 }
@@ -155,13 +170,15 @@ h1{
     background-image: url(../IMG/pexels-jéshoots-238118.jpg);
     background-size:cover;
     background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
 }
 
 .registros{
     
     color: black;
     text-align: center;
-    height: 800px;
+    height: 400px;
     width: 100%;
     
 }
@@ -172,6 +189,61 @@ h1{
     background-repeat: no-repeat;
     text-align: center;
 
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
 }
 
 
