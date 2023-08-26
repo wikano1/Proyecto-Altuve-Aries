@@ -246,7 +246,60 @@ $animationSpeed: 40s;
 	}
 }
 
-
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+      background-image: url(../IMG/pexels-edward-jenner-4252526.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    body {
+      background-image: url(../IMG/pexels-edward-jenner-4252526.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      min-height: 85vh;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      background-image: url(../IMG/pexels-edward-jenner-4252526.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      min-height: 75vh;
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    body {
+      background-image: url(../IMG/pexels-edward-jenner-4252526.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      min-height: 65vh;
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    body {
+      background-image: url(../IMG/pexels-edward-jenner-4252526.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      min-height: 55vh;
+    }
+  }
 
 
 
