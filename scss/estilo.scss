@@ -26,7 +26,12 @@ body{
       height: 300px;
       width: 300px;
     }
-  }
+    .primero{
+        p{
+            font-size: 15px;
+        }
+    }
+ }
 
 .icono{
     margin-left: 10px;
@@ -156,11 +161,17 @@ h1{
     transform: translatey(0px);
     -webkit-animation: float 6s ease-in-out infinite;
             animation: float 6s ease-in-out infinite;
+    a{
+        color: black;
+        &:hover{
+            color: rgb(49, 47, 47);
+        }
+    }
+    P{
+        font-size: 20px;
+    }
 }
 
-.iconos{
-    margin-left: 10%;
-}
 .centro{
     align-items: center;
 }

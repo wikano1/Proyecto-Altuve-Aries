@@ -18,7 +18,9 @@ body {
     max-width: 300px; }
   .carousel-item img {
     height: 300px;
-    width: 300px; } }
+    width: 300px; }
+  .primero p {
+    font-size: 15px; } }
 
 .icono {
   margin-left: 10px; }
@@ -127,9 +129,12 @@ h1 {
   transform: translatey(0px);
   -webkit-animation: float 6s ease-in-out infinite;
   animation: float 6s ease-in-out infinite; }
-
-.iconos {
-  margin-left: 10%; }
+  .primero a {
+    color: black; }
+    .primero a:hover {
+      color: #312f2f; }
+  .primero P {
+    font-size: 20px; }
 
 .centro {
   align-items: center; }
